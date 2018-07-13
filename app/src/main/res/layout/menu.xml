@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/background_light">
+
+    <Spinner
+        android:id="@+id/spinOpciones"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:fadingEdge="horizontal|vertical"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toTopOf="@+id/btIr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOpcion"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvOpcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCrear" />
+
+    <Button
+        android:id="@+id/btCrear"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Crear secuencia"
+        android:background="@drawable/buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCreacion" />
+
+    <Button
+        android:id="@+id/btIr"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btCrear"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btCrear"
+        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/buttons"
+        android:text="Editar secuencia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtCreacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="Introduce un nombre de secuencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAñadir"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="48dp"
+        android:layout_toLeftOf="@+id/btIr"
+        android:layout_toStartOf="@+id/btIr"
+        android:background="@drawable/buttons"
+        android:text="Añadir pantalla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btEliminar"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnAñadir"
+        android:layout_alignBottom="@+id/btnAñadir"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="48dp"
+        android:layout_toEndOf="@+id/btIr"
+        android:layout_toRightOf="@+id/btIr"
+        android:background="@drawable/buttons"
+        android:text="Eliminar secuencia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivUsuario"
+        android:layout_width="235dp"
+        android:layout_height="162dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinOpciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352" />
+
+</android.support.constraint.ConstraintLayout>
